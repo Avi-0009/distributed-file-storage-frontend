@@ -2,10 +2,10 @@ import { Bell, FileText, Folder, ImageIcon, Menu, MoreVertical, Plus, Video } fr
 
 const Dashboard = () => {
   return (
-    <div className="p-4 min-h-screen bg-background">
+    <div className="p-4.5 min-h-screen bg-background">
       {/* Top header */}
       <div className="flex justify-between items-center mb-3">
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-3">
           <Menu className="w-6 h-6 text-foreground"/>
           <span className="font-semibold text-[20px] text-foreground">Mesh</span>
         </div>
