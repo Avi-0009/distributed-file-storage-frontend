@@ -1,4 +1,4 @@
-import { Bell, Folder, Menu } from "lucide-react"
+import { Bell, FileText, Folder, ImageIcon, Menu, MoreVertical, Plus, Video } from "lucide-react"
 
 const Dashboard = () => {
   return (
@@ -60,7 +60,48 @@ const Dashboard = () => {
       </div>
 
       {/* Recent files */}
-      <div></div>
+      <div className="font-semibold text-[13px] mb-1.5 text-foreground">Recent Files</div>
+      <div className="flex flex-col">
+        
+        <div className="flex items-center gap-3 py-2 border-b border-border">
+          <span className="w-8.5 h-8.5 rounded-[10px] bg-slate-100 text-muted-foreground flex items-center justify-center shrink-0">
+            <FileText className="w-4 h-4" />
+          </span>
+          <div className="flex-1 min-w-0">
+            <div className="text-[13px] font-medium truncate text-foreground">Resume.pdf</div>
+            <div className="text-[11px] text-muted-foreground">2.4 MB · Today</div>
+          </div>
+          <MoreVertical className="w-4 h-4 text-muted-foreground shrink-0 cursor-pointer" />
+        </div>
+
+        <div className="flex items-center gap-3 py-2 border-b border-border">
+          <span className="w-8.5 h-8.5 rounded-[10px] bg-slate-100 text-muted-foreground flex items-center justify-center shrink-0">
+            <ImageIcon className="w-4 h-4" />
+          </span>
+          <div className="flex-1 min-w-0">
+            <div className="text-[13px] font-medium truncate text-foreground">Places.jpg</div>
+            <div className="text-[11px] text-muted-foreground">4.8 MB · Yesterday</div>
+          </div>
+          <MoreVertical className="w-4 h-4 text-muted-foreground shrink-0 cursor-pointer" />
+        </div>
+
+        <div className="flex items-center gap-3 py-2 border-b-0 border-border">
+          <span className="w-8.5 h-8.5 rounded-[10px] bg-slate-100 text-muted-foreground flex items-center justify-center shrink-0">
+            <Video className="w-4 h-4" />
+          </span>
+          <div className="flex-1 min-w-0">
+            <div className="text-[13px] font-medium truncate text-foreground">Demo.mp4</div>
+            <div className="text-[11px] text-muted-foreground">12 MB · 2d ago</div>
+          </div>
+          <MoreVertical className="w-4 h-4 text-muted-foreground shrink-0 cursor-pointer" />
+        </div>
+
+      </div>
+
+      {/* Floating Action Button (Upload) */}
+      <button className="fixed bottom-20 right-4 w-11 h-11 rounded-full bg-primary text-white flex items-center justify-center shadow-[0_4px_16px_rgba(37,99,235,0.35)] hover:opacity-90 transition-opacity z-50">
+        <Plus className="w-5 h-5" />
+      </button>
 
     </div>
   )
