@@ -19,7 +19,7 @@ const Dashboard = () => {
       {/* Quota */}
       <div className="flex justify-between items-center text-4 font-medium text-foreground mb-1">
         <span>Storage</span>
-        <span className="text-muted-foreground font-normal">6.2GB / 15GB</span>
+        <span className="text-sm text-muted-foreground font-normal">6.2GB / 15GB</span>
       </div>
 
       <div className="w-full h-1.5 bg-border rounded-full overflow-hidden mb-3.5">
