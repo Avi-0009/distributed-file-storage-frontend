@@ -73,7 +73,7 @@ const Settings = () => {
                             <div className="text-[11px] text-muted-foreground uppercase tracking-wider mt-0.5">Dark Mode</div>
                         </div>
                     </div>
-                    s
+                    
                     <div className="w-12 h-6 bg-primary rounded-full relative flex items-center cursor-pointer shadow-inner">
                         <div className="w-4 h-4 bg-white rounded-full absolute right-1 shadow-sm"></div>
                     </div>
